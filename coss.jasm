@@ -1,4 +1,4 @@
-public identity class coss version 70:0
+public super class coss version 69:0
 {
   public Method "<init>":"()V" 
     stack 1  locals 1
@@ -14,6 +14,9 @@ public identity class coss version 70:0
          dconst_1;
          invokestatic      Method java/lang/Math.cos:"(D)D";
          dstore_1;
+         getstatic         Field java/lang/System.out:"Ljava/io/PrintStream;";
+         ldc               String "\u001bc\u001b[47;31m\n";
+         invokevirtual     Method java/io/PrintStream.println:"(Ljava/lang/String;)V";
          getstatic         Field java/lang/System.out:"Ljava/io/PrintStream;";
          dload_1;
          invokevirtual     Method java/io/PrintStream.println:"(D)V";
